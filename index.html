@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ESG and Sustainability | Home</title>
+	<link rel="icon" type="img/png" href="./images/esg.png">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<div id="container">
+		<!-- header and navigation bar-->
+		<header>
+			<nav>
+				<a href="./index.html">Home</a> ｜ 
+				<a href="./environment.html">Environment</a> ｜ 
+				<a href="./social.html">Social</a> ｜ 
+				<a href="./governance.html">Governance</a> 
+			</nav>
+
+			<h1><a href="index.html">ESG Basics & Sustainability</a></h1>
+		</header>
+
+
+		<!-- Interactive Section Starts-->
+		<div class="interactive-box">
+			<button id="funFactBtn" class="interactive-btn">🎓 Click for a ESG Fun Fact 🎓</button>
+			<button id="themeBtn" class="interactive-btn">🌿 Toggle Eye-Care Mode 🌿</button>
+		</div>
+		<!-- fun fact and daily message-->
+		<p id="funFactBox"></p>
+		<p id="dailyMessage"></p>
+
+		<!-- Interactive Section Ends-->
+
+
+		<!-- main content-->
+		<main class="homepage-grid">
+
+			<!-- Important Links of ESG-->
+			<section>
+				<h2>Important ESG Regulations Links</h2>
+				<ul>
+					<li><a href="https://www.globalreporting.org">GRI Standards</a></li>
+					<li><a href="https://www.sasb.org">Sustainability Accounting Standards Board(SASB)</a></li>
+					<li><a href="https://www.unglobalcompact.org">UN Global Compact</a></li>
+				</ul>
+			</section>
+
+			<!-- ESG Images-->
+			<section class="homepage-img">
+				<a href="./environment.html">
+					<img src="./images/env.png" srcset="./images/env-480w.png 480w, ./images/env-960w.png 960w" alt="Environment" width="480" height="320">
+				</a>
+
+				<a href="./social.html">
+					<img src="./images/social.png" srcset="./images/social-480w.png 480w, ./images/social-960w.png 960w" alt="Social" width="480" height="320">
+				</a>
+
+				<a href="./governance.html">
+					<img src="./images/governance.png" srcset="./images/governance-480w.png 480w, ./images/governance-960w.png 960w" alt="Governance" width="480" height="320">
+				</a>
+			</section>
+
+			<!-- Importance of ESG -->
+			<section class="whyEsg">
+				<h2>Why ESG Matters?</h2>
+				<ul>
+					<li>Investors use ESG to evaluate long-term value and risk.</li>
+					<li>Governments demand ESG transparency and disclosure.</li>
+					<li>Businesses use ESG to build resilience and brand trust.</li>
+					<li>Consumers reward ethical and sustainable companies.</li>
+				</ul>
+			</section>
+
+			<!-- ESG Definition-->
+			<section class="esgDef">
+				<h2>What is ESG?</h2>
+				<article><p>ESG stands for Environmental, Social, and Governance. These three pillars are becoming essential in evaluating how companies operate beyond profit. From carbon neutrality to social equity and transparent governance, ESG sets the modern standard for ethical and sustainable growth.</p></article>
+				
+				<!-- ESG Table-->
+				<div class="esgDef-pillars">
+					<div>
+						<h3>🌍 Environment</h3>
+						<p>Refers to whether the organization is operating as a steward of the environment and covers environmental issues like climate change, greenhouse gas emissions (GHG), deforestation, biodiversity, carbon emissions, waste management, and pollution.</p>
+					</div>
+
+					<div>
+						<h3>❤️ Social</h3>
+						<p>Refers to the impact the organization has on people, culture, and communities, and looks at the social impact of diversity, inclusivity, human rights, and supply chains.</p>
+					</div>			
+
+					<div>
+						<h3>🏢 Governance</h3>
+						<p>Refers to how the organization is directed and looks at corporate governance factors like executive compensation, succession planning, board management practices and shareholder rights.</p>
+					</div>
+				</div>
+
+			</section>
+
+
+	      <!--contact form and audio  -->
+	      <section class="contact-media">
+
+	        <div class="contact-form">
+	          <h2>Contact Me & Share Your Thoughts</h2>
+	          <p>Which ESG pillar matters the most to you? Tell me why and feel free to message me on any questions on ESG!</p>
+
+	          <!-- make the dropdown -->
+	          <form action="https://formspree.io/f/xldaered" method="POST" enctype="multipart/form-data">
+	          	<label for="pillar">Which pillar are you talking about?</label><br>
+	          	<select id="pillar" name="pillar" required>
+	          		<option value="">-- Select One--</option>
+	          		<option value="Environment">🌍 Environment</option>
+	          		<option value="Social">❤️ Social</option>
+	          		<option value="Governance">🏢 Governance</option>
+	          	</select>
+	          	<br><br>
+
+	          	<label for="message">Your Message</label><br>
+	          	<textarea id="message" name="message" rows="5" placeholder="Write your thoughts or questions..." required></textarea>
+	          	<br><br>
+
+	          	<input type="submit" value="Send">
+	          </form>
+	      	</div>
+
+	      	<div class="contact-video">
+	      		<h2>Listen: ESG Brief</h2>
+	          	<video controls>
+	          		<source src="./media/esg-video.mp4" type="video/mp4">
+	          			Your browser does not support the video tag.
+	          	</video>
+	        </div>
+	      </section>
+
+		</main>
+
+
+		<!-- footer-->
+		<footer id="footer">
+			<p><a href="mailto:baoyi_jiang@outlook.com" target="_blank" rel="noopener">baoyi_jiang@outlook.com</a> | &copy; Mable Jiang · Web Design Project 2025</p>
+
+			<p class="footer-credit">
+				Images & Video sourced from 
+				<a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a>
+				and
+				<a href="https://www.douyin.com/" target="_blank" rel="noopener">Douyin</a>
+			</p>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>
